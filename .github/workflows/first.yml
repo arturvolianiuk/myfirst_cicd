@@ -15,3 +15,6 @@ jobs:
 
       - name: First echo
         run: echo "Hello World"
+
+      - name: Second echo
+        run: echo "Goodbuy World"
