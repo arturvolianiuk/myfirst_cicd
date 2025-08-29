@@ -1,0 +1,17 @@
+name: First pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: checkout rep
+        uses: actions/checkout@v4
+
+      - name: First echo
+        run: echo "Hello World"
