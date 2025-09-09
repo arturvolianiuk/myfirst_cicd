@@ -1,4 +1,4 @@
-name: First pipeline
+name: Second 
 
 on:
   push:
@@ -8,13 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+
+      my_name: "Artur"
+
     steps:
-
-      - name: checkout rep
-        uses: actions/checkout@v4
-
-      - name: First echo
-        run: echo "Hello World"
-
-      - name: Second echo
-        run: echo "Goodbuy World"
+      - name: First variable
+        run: echo "Hello, $my_name"
